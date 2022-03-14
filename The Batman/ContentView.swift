@@ -31,6 +31,9 @@ struct ContentView: View {
                             .fontWeight(.light)
                     } // VSTACK
                     Spacer()
+                    Image("TabView copie")
+                        .resizable()
+                        .frame(width: 30, height: 30)
                 } // HSTACK
                 .padding(.horizontal, 10)
                 .padding(.top, 10)
