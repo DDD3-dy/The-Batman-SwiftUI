@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  CarteBatmanView.swift
 //  The Batman
 //
-//  Created by Dylan Caetano on 10/03/2022.
+//  Created by Dylan Caetano on 14/03/2022.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct CarteBatmanView: View {
     var body: some View {
         ZStack {
             VStack {
@@ -51,14 +51,10 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct CarteBatmanView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CarteBatmanView()
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }
-
-
-
-
-
-

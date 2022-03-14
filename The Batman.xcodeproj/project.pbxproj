@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F81563DA27DF79550001A999 /* CarteBatmanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81563D927DF79540001A999 /* CarteBatmanView.swift */; };
+		F81563DD27DF89CB0001A999 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81563DC27DF89CB0001A999 /* CellView.swift */; };
 		F81B1B1627DA6640005244B8 /* The_BatmanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B1B1527DA6640005244B8 /* The_BatmanApp.swift */; };
-		F81B1B1827DA6640005244B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B1B1727DA6640005244B8 /* ContentView.swift */; };
+		F81B1B1827DA6640005244B8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B1B1727DA6640005244B8 /* MainView.swift */; };
 		F81B1B1A27DA6644005244B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81B1B1927DA6644005244B8 /* Assets.xcassets */; };
 		F81B1B1D27DA6644005244B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81B1B1C27DA6644005244B8 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F81563D927DF79540001A999 /* CarteBatmanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteBatmanView.swift; sourceTree = "<group>"; };
+		F81563DC27DF89CB0001A999 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		F81B1B1227DA6640005244B8 /* The Batman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Batman.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F81B1B1527DA6640005244B8 /* The_BatmanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_BatmanApp.swift; sourceTree = "<group>"; };
-		F81B1B1727DA6640005244B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F81B1B1727DA6640005244B8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F81B1B1927DA6644005244B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F81B1B1C27DA6644005244B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +36,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F81563D827DF78820001A999 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F81B1B1527DA6640005244B8 /* The_BatmanApp.swift */,
+				F81B1B1727DA6640005244B8 /* MainView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F81563DB27DF796A0001A999 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F81563D927DF79540001A999 /* CarteBatmanView.swift */,
+				F81563DC27DF89CB0001A999 /* CellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F81B1B0927DA6640005244B8 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +73,8 @@
 		F81B1B1427DA6640005244B8 /* The Batman */ = {
 			isa = PBXGroup;
 			children = (
-				F81B1B1527DA6640005244B8 /* The_BatmanApp.swift */,
-				F81B1B1727DA6640005244B8 /* ContentView.swift */,
+				F81563D827DF78820001A999 /* App */,
+				F81563DB27DF796A0001A999 /* Views */,
 				F81B1B1927DA6644005244B8 /* Assets.xcassets */,
 				F81B1B1B27DA6644005244B8 /* Preview Content */,
 			);
@@ -137,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F81B1B1827DA6640005244B8 /* ContentView.swift in Sources */,
+				F81563DD27DF89CB0001A999 /* CellView.swift in Sources */,
+				F81563DA27DF79550001A999 /* CarteBatmanView.swift in Sources */,
+				F81B1B1827DA6640005244B8 /* MainView.swift in Sources */,
 				F81B1B1627DA6640005244B8 /* The_BatmanApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
