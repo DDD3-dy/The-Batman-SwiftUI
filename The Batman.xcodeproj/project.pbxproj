@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F810B4D627E138390005116D /* Cover.json in Resources */ = {isa = PBXBuildFile; fileRef = F810B4D527E138390005116D /* Cover.json */; };
+		F810B4D927E138930005116D /* Cover.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810B4D827E138930005116D /* Cover.swift */; };
 		F81563DA27DF79550001A999 /* CarteBatmanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81563D927DF79540001A999 /* CarteBatmanView.swift */; };
 		F81563DD27DF89CB0001A999 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81563DC27DF89CB0001A999 /* CellView.swift */; };
 		F81B1B1627DA6640005244B8 /* The_BatmanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B1B1527DA6640005244B8 /* The_BatmanApp.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F810B4D527E138390005116D /* Cover.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cover.json; sourceTree = "<group>"; };
+		F810B4D827E138930005116D /* Cover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cover.swift; sourceTree = "<group>"; };
 		F81563D927DF79540001A999 /* CarteBatmanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteBatmanView.swift; sourceTree = "<group>"; };
 		F81563DC27DF89CB0001A999 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		F81B1B1227DA6640005244B8 /* The Batman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Batman.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +40,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F810B4D727E1385B0005116D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F810B4D527E138390005116D /* Cover.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F810B4DA27E1389A0005116D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F810B4D827E138930005116D /* Cover.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F81563D827DF78820001A999 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +95,8 @@
 			children = (
 				F81563D827DF78820001A999 /* App */,
 				F81563DB27DF796A0001A999 /* Views */,
+				F810B4DA27E1389A0005116D /* Models */,
+				F810B4D727E1385B0005116D /* Data */,
 				F81B1B1927DA6644005244B8 /* Assets.xcassets */,
 				F81B1B1B27DA6644005244B8 /* Preview Content */,
 			);
@@ -149,6 +171,7 @@
 			files = (
 				F81B1B1D27DA6644005244B8 /* Preview Assets.xcassets in Resources */,
 				F81B1B1A27DA6644005244B8 /* Assets.xcassets in Resources */,
+				F810B4D627E138390005116D /* Cover.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +185,7 @@
 				F81563DD27DF89CB0001A999 /* CellView.swift in Sources */,
 				F81563DA27DF79550001A999 /* CarteBatmanView.swift in Sources */,
 				F81B1B1827DA6640005244B8 /* MainView.swift in Sources */,
+				F810B4D927E138930005116D /* Cover.swift in Sources */,
 				F81B1B1627DA6640005244B8 /* The_BatmanApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
