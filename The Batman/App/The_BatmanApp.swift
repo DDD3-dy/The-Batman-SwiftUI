@@ -11,7 +11,7 @@ import SwiftUI
 struct The_BatmanApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            CellView()
         }
     }
 }

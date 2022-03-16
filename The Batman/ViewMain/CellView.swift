@@ -18,26 +18,36 @@ struct CellView: View {
             Text("The Batman")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-            Text("Gotham")
+            Text("Gotham" .uppercased())
                 .font(.footnote)
                 .fontWeight(.semibold)
+                .foregroundColor(.secondary)
             Text("Bruce Wayne, alias Batman, est un super-héros de fiction appartenant à l'univers de DC Comics.")
                 .multilineTextAlignment(.leading)
                 .lineLimit(2)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .foregroundColor(.secondary)
         } // VSTACK
         .padding(.all, 20.0)
+        .padding(.vertical, 20)
         .frame(height: 350.0)
-        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color("Background")/*@END_MENU_TOKEN@*/)
+        .background(.ultraThinMaterial)
         .cornerRadius(30.0)
-        .shadow(radius: /*@START_MENU_TOKEN@*/20/*@END_MENU_TOKEN@*/)
-        
+        .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 0, y: 10)
+        .padding(.horizontal, 20)
+        .background(Image("BlobRed").offset(x: -150, y: -100))
+        .overlay(
+            Image("TheBatmanMovieCover")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(height: 195)
+                .offset(x: 12, y: -75)
+        )
     }
 }
 
 struct CellView_Previews: PreviewProvider {
     static var previews: some View {
         CellView()
-            .previewLayout(.sizeThatFits)
-            .padding()
     }
 }
