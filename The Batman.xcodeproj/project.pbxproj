@@ -63,14 +63,6 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		F81563DB27DF796A0001A999 /* ViewMain */ = {
-			isa = PBXGroup;
-			children = (
-				F81563DC27DF89CB0001A999 /* CellView.swift */,
-			);
-			path = ViewMain;
-			sourceTree = "<group>";
-		};
 		F81B1B0927DA6640005244B8 = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				F81563D827DF78820001A999 /* App */,
-				F81563DB27DF796A0001A999 /* ViewMain */,
 				F84FA8E627E275A100C51C3D /* View */,
 				F810B4DA27E1389A0005116D /* Models */,
 				F810B4D727E1385B0005116D /* Data */,
@@ -112,6 +103,7 @@
 		F84FA8E627E275A100C51C3D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F81563DC27DF89CB0001A999 /* CellView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

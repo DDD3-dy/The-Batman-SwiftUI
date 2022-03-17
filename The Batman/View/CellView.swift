@@ -18,6 +18,7 @@ struct CellView: View {
             Text("The Batman")
                 .font(.largeTitle)
                 .fontWeight(.bold)
+                .foregroundStyle(.linearGradient(colors: [.primary, .primary.opacity(0.5)], startPoint: .topLeading, endPoint: .bottomTrailing))
             Text("Gotham" .uppercased())
                 .font(.footnote)
                 .fontWeight(.semibold)
@@ -35,7 +36,6 @@ struct CellView: View {
         .cornerRadius(30.0)
         .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 0, y: 10)
         .padding(.horizontal, 20)
-        .background(Image("BlobRed").offset(x: -150, y: -100))
         .overlay(
             Image("TheBatmanMovieCover")
                 .resizable()
@@ -49,5 +49,6 @@ struct CellView: View {
 struct CellView_Previews: PreviewProvider {
     static var previews: some View {
         CellView()
+            .preferredColorScheme(.dark)
     }
 }

@@ -9,13 +9,19 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-       Text("Hello")
+        ScrollView {
+            CellView()
+        } // SCROLLVIEW
+        .background(
+            Image("Blob-1")
+            .offset(x: -145, y: -110))
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+            .preferredColorScheme(.dark)
     }
 }
 
