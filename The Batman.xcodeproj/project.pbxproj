@@ -14,6 +14,7 @@
 		F81B1B1827DA6640005244B8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B1B1727DA6640005244B8 /* MainView.swift */; };
 		F81B1B1A27DA6644005244B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81B1B1927DA6644005244B8 /* Assets.xcassets */; };
 		F81B1B1D27DA6644005244B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81B1B1C27DA6644005244B8 /* Preview Assets.xcassets */; };
+		F828713327E64D25001CE1E1 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F828713227E64D25001CE1E1 /* CharacterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		F81B1B1727DA6640005244B8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F81B1B1927DA6644005244B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F81B1B1C27DA6644005244B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F828713227E64D25001CE1E1 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				F81563D827DF78820001A999 /* App */,
-				F84FA8E627E275A100C51C3D /* View */,
+				F84FA8E627E275A100C51C3D /* Componant */,
 				F810B4DA27E1389A0005116D /* Models */,
 				F810B4D727E1385B0005116D /* Data */,
 				F81B1B1927DA6644005244B8 /* Assets.xcassets */,
@@ -100,12 +102,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		F84FA8E627E275A100C51C3D /* View */ = {
+		F84FA8E627E275A100C51C3D /* Componant */ = {
 			isa = PBXGroup;
 			children = (
 				F81563DC27DF89CB0001A999 /* CellView.swift */,
+				F828713227E64D25001CE1E1 /* CharacterView.swift */,
 			);
-			path = View;
+			path = Componant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +184,7 @@
 			files = (
 				F81563DD27DF89CB0001A999 /* CellView.swift in Sources */,
 				F81B1B1827DA6640005244B8 /* MainView.swift in Sources */,
+				F828713327E64D25001CE1E1 /* CharacterView.swift in Sources */,
 				F810B4D927E138930005116D /* Cover.swift in Sources */,
 				F81B1B1627DA6640005244B8 /* The_BatmanApp.swift in Sources */,
 			);

@@ -9,12 +9,20 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        ScrollView {
-            CellView()
-        } // SCROLLVIEW
-        .background(
-            Image("Blob-1")
-            .offset(x: -145, y: -110))
+           VStack {
+                CellView()
+                Spacer()
+                    ScrollView(.horizontal) {
+                        CharacterView()
+                            .offset(x: 0, y: 6)
+                        Spacer()
+                    } // SCROLLVIEW
+                
+            } // VSTACK
+            .background(
+                Image("Blob-1")
+                .offset(x: -145, y: -110)
+            )
     }
 }
 
