@@ -9,9 +9,9 @@ import SwiftUI
 
 struct CellView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-                Image("TheBatmanMovieCover")
-                    .resizable()
+        VStack(alignment: .leading) {
+            Image("TheBatmanMovieCover")
+                .resizable()
                 .aspectRatio(contentMode: .fill)
             Text("The Batman")
                 .font(.largeTitle)
@@ -35,15 +35,15 @@ struct CellView: View {
                         RoundedRectangle(cornerRadius: 30, style: .continuous)
         )
         .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 0, y: 10)
-        .padding(.horizontal, 20)
-        .clipped()
+        .padding(.horizontal, 35)
+
     }
 }
 
 struct CellView_Previews: PreviewProvider {
     static var previews: some View {
         CellView()
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
             .previewLayout(.sizeThatFits)
             .padding()
     }

@@ -9,20 +9,53 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-           VStack {
-                CellView()
+        ZStack(alignment: .bottom) {
+            HomeView()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            HStack {
                 Spacer()
-                    ScrollView(.horizontal) {
-                        CharacterView()
-                            .offset(x: 0, y: 6)
-                        Spacer()
-                    } // SCROLLVIEW
-                
-            } // VSTACK
-            .background(
-                Image("Blob-1")
-                .offset(x: -145, y: -110)
+                VStack(spacing: 0) {
+                    Image(systemName: "house")
+                        .symbolVariant(.fill)
+                        .font(.body.bold())
+                    Text("Home")
+                        .font(.caption2)
+                } // VSTACK TAB-BAR
+                Spacer()
+                VStack(spacing: 0) {
+                    Image("TabView")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 40, height: 50)
+                }
+                Spacer()
+                VStack(spacing: 0) {
+                    Image(systemName: "menucard.fill")
+                        .symbolVariant(.fill)
+                        .font(.body.bold())
+                    Text("Card")
+                        .font(.caption2)
+                }
+                Spacer()
+                VStack(spacing: 0) {
+                    Image(systemName: "doc.richtext.fill")
+                        .symbolVariant(.fill)
+                        .font(.body.bold())
+                    Text("Affiche")
+                        .font(.caption2)
+                }
+                Spacer()
+            } // HSTACK TAB-BAR
+            .padding(.top, 20)
+            .frame(height: 100, alignment: .top)
+            .background(.ultraThinMaterial, in:
+                            RoundedRectangle(cornerRadius: 38, style: .continuous)
             )
+            
+            .frame(maxHeight: .infinity, alignment: .bottom)
+            .ignoresSafeArea()
+        } // ZSTACK TAB-BAR
+        
     }
 }
 

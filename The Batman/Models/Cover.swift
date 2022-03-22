@@ -9,5 +9,7 @@ import Foundation
 
 struct CoverImage: Codable, Identifiable {
     let id: Int
+    let image: String
     let name: String
+    let history: String
 }
