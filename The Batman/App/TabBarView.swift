@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct TabBarView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             HomeView()
@@ -61,7 +61,7 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        TabBarView()
             .preferredColorScheme(.dark)
     }
 }

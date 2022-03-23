@@ -29,7 +29,6 @@ struct CellView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .foregroundColor(.secondary)
             } // VSTACK
-            
         } // HSTACK
         .padding(.all, 20.0)
         .padding(.vertical, 20)
@@ -38,7 +37,7 @@ struct CellView: View {
                         RoundedRectangle(cornerRadius: 30, style: .continuous)
         )
         .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 0, y: 10)
-    .padding(.horizontal, 25)
+        .padding(.horizontal, 25)
 
     }
 }
